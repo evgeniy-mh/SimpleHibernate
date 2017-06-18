@@ -28,6 +28,9 @@ public class main {
         man.addEmployee(new ContractEmployee("Ssaha", 58.3, "30"));
         man.addEmployee(new RegularEmployee("Vovan", 79.11, 20));*/
         man.listEmployees();
+        man.deleteEmployee(7);
+        man.listEmployees();
         
+        man.close();
     }
 }
