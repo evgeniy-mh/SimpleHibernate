@@ -24,9 +24,10 @@ public class main {
         
         EmployeeManager man=new EmployeeManager();
         
-        man.addEmployee(new Employee("Jack"));
+        /*man.addEmployee(new Employee("Jack"));
         man.addEmployee(new ContractEmployee("Ssaha", 58.3, "30"));
-        man.addEmployee(new RegularEmployee("Vovan", 79.11, 20));
+        man.addEmployee(new RegularEmployee("Vovan", 79.11, 20));*/
+        man.listEmployees();
         
     }
 }

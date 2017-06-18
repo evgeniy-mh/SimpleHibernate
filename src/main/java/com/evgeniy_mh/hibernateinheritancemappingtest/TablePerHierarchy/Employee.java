@@ -46,6 +46,11 @@ public class Employee {
         this.id=id;
         this.name=name;
     }
+    
+    @Override
+    public String toString(){
+        return String.format("%d %s", getId(), getName());
+    }
 
     public int getId() {
         return id;
