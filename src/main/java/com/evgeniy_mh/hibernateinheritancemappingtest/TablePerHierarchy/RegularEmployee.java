@@ -5,13 +5,26 @@
  */
 package com.evgeniy_mh.hibernateinheritancemappingtest.TablePerHierarchy;
 
+import javax.persistence.Column;
+import javax.persistence.DiscriminatorValue;
+import javax.persistence.Entity;
+
 /**
  *
  * @author evgeniy
  */
+
+@Entity
+@DiscriminatorValue("regular employee")
+
 public class RegularEmployee extends Employee{
+    
+    @Column(name = "salary")
     private double salary;
+    @Column(name = "bonus")
     private int bonus;
+    
+    public RegularEmployee(){}
     
     public RegularEmployee(int id,String name, double salary, int bonus){
         super(id,name);

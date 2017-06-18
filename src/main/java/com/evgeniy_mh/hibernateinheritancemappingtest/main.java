@@ -5,19 +5,21 @@
  */
 package com.evgeniy_mh.hibernateinheritancemappingtest;
 
-import com.evgeniy_mh.hibernateinheritancemappingtest.TablePerHierarchy.ContractEmployee;
-import com.evgeniy_mh.hibernateinheritancemappingtest.TablePerHierarchy.RegularEmployee;
+import com.evgeniy_mh.hibernateinheritancemappingtest.TablePerHierarchy.EmployeeManager;
 
 /**
  *
  * @author evgeniy
  */
 public class main {
+    
+    public static void testTablePerInheritance(){
+    
+    };
+    
     public static void main(String[] args) {
-        RegularEmployee re=new RegularEmployee(5, "Lol", 12.1, 5);
-        System.out.println(re);
         
-        ContractEmployee ce=new ContractEmployee(7, "jack", 67.4, "15");
-        System.out.println(ce);
+        EmployeeManager man=new EmployeeManager();
+        man.addEmployee();
     }
 }

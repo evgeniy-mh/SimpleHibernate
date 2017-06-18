@@ -5,13 +5,26 @@
  */
 package com.evgeniy_mh.hibernateinheritancemappingtest.TablePerHierarchy;
 
+import javax.persistence.Column;
+import javax.persistence.DiscriminatorValue;
+import javax.persistence.Entity;
+
 /**
  *
  * @author evgeniy
  */
+
+@Entity
+@DiscriminatorValue("contractemoloyee")
+
 public class ContractEmployee extends Employee{
+    
+    @Column(name = "pay_per_hour")
     private double pay_per_hour;
+    @Column(name = "contract_period")
     private String contract_period;
+    
+    public ContractEmployee(){}
     
     public ContractEmployee(int id,String name, double pay_per_hour, String contract_period){
         super(id,name);
