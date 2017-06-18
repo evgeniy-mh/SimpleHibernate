@@ -21,12 +21,18 @@ public class ContractEmployee extends Employee{
     
     @Column(name = "pay_per_hour")
     private double pay_per_hour;
-    @Column(name = "contract_period")
+    @Column(name = "contract_duration")
     private String contract_period;
     
     public ContractEmployee(){}
     
-    public ContractEmployee(int id,String name, double pay_per_hour, String contract_period){
+    public ContractEmployee(String name, double pay_per_hour, String contract_period){
+        super(name);
+        this.pay_per_hour=pay_per_hour;
+        this.contract_period=contract_period;
+    }
+    
+    protected ContractEmployee(int id,String name, double pay_per_hour, String contract_period){
         super(id,name);
         this.pay_per_hour=pay_per_hour;
         this.contract_period=contract_period;
