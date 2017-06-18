@@ -1,0 +1,4 @@
+**Table per inheritance
+
+create table tph(id int not null auto_increment, type varchar(255) not null, name varchar(255), salary float,bonus int, pay_per_hour float, contract_duration varchar(255), primary key(id));
+
