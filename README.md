@@ -1,7 +1,7 @@
 # SimpleHibernate
 Основные функции работы с Hibernate, Hibernate annotations api, maven, mysql.
 
-##Inheritance Mapping:
+## Inheritance Mapping:
 ### 1. Table per Hierarchy
 In table per hierarchy mapping, single table is required to map the whole hierarchy, an extra column (known as discriminator column) is added to identify the class. But nullable values are stored in the table.
 
