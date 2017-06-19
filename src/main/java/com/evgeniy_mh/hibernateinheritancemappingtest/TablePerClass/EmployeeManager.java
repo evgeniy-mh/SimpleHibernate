@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.evgeniy_mh.hibernateinheritancemappingtest.TablePerHierarchy;
+package com.evgeniy_mh.hibernateinheritancemappingtest.TablePerClass;
 
 import java.util.Iterator;
 import java.util.List;
@@ -47,7 +47,7 @@ public class EmployeeManager {
         Transaction tr=null;
         try{
             tr=session.beginTransaction();            
-            List employees = session.createQuery("from com.evgeniy_mh.hibernateinheritancemappingtest.TablePerHierarchy.Employee").list();
+            List employees = session.createQuery("from Employee").list();
             for (Iterator it = employees.iterator(); it.hasNext();) {
                 Employee emp=(Employee) it.next();
                 System.out.println(emp);

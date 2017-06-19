@@ -5,6 +5,7 @@
 <hibernate-configuration>
     <session-factory>
         <property name="hibernate.id.new_generator_mappings">false</property>
+        <property name="hbm2ddl.auto">update</property>  
         <property name="dialect">
             org.hibernate.dialect.MySQLDialect
         </property>
@@ -21,9 +22,15 @@
             pro
         </property>
         
+        <!-- TablePerHierarchy class mapping -->
         <mapping class="com.evgeniy_mh.hibernateinheritancemappingtest.TablePerHierarchy.Employee"/>
         <mapping class="com.evgeniy_mh.hibernateinheritancemappingtest.TablePerHierarchy.ContractEmployee"/>
         <mapping class="com.evgeniy_mh.hibernateinheritancemappingtest.TablePerHierarchy.RegularEmployee"/>
+        
+        <!-- TablePerClass class mapping -->
+        <mapping class="com.evgeniy_mh.hibernateinheritancemappingtest.TablePerClass.Employee"/>
+        <mapping class="com.evgeniy_mh.hibernateinheritancemappingtest.TablePerClass.ContractEmployee"/>
+        <mapping class="com.evgeniy_mh.hibernateinheritancemappingtest.TablePerClass.RegularEmployee"/>
         
     </session-factory>
 </hibernate-configuration>
