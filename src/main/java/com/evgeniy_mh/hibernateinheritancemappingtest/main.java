@@ -14,8 +14,8 @@ public class main {
     
     public static void main(String[] args) {
         
-        //TestTablePerHierarchy.test();
+        TestTablePerHierarchy.test();
         TestTablePerClass.test();
-
+        TestTablePerSubclass.test();
     }
 }

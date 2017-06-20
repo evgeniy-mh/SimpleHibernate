@@ -4,13 +4,13 @@
  * and open the template in the editor.
  */
 package com.evgeniy_mh.hibernateinheritancemappingtest;
-import com.evgeniy_mh.hibernateinheritancemappingtest.TablePerHierarchy.*;
+import com.evgeniy_mh.hibernateinheritancemappingtest.TablePerSubclass.*;
 
 /**
  *
  * @author evgeniy
  */
-public class TestTablePerHierarchy {
+public class TestTablePerSubclass {
     public static void test(){
         System.out.println("-----Testing Table Per Hierarchy:");
         EmployeeManager man=new EmployeeManager(); 

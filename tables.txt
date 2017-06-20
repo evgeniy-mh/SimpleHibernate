@@ -1,12 +1,20 @@
-##Table per Hierarchy
+##Table per Hierarchy##
 
 create table tph(id int not null auto_increment, type varchar(255) not null, name varchar(255), salary float,bonus int, pay_per_hour float, contract_duration varchar(255), primary key(id));
 
-##Table per Class
+##Table per Class##
 
 create table tpcEmployee(id int not null, name varchar(255), primary key(id));
 
 create table tpcRegularEmployee(id int not null, name varchar(255), salary float, bonus int, primary key(id));
 
 create table tpcContractEmployee(id int not null, name varchar(255), pay_per_hour float, contract_duration varchar(255), primary key(id));
+
+##Table per Subclass##
+
+Тут я не смог создать правильные таблицы чтобы hibernate с ними работал. Использовал <property name="hbm2ddl.auto">update</property> для их автоматического создания.
+
+
+
+
 
